@@ -1,0 +1,13 @@
+<div class="modal">
+  <div class="modal-content">
+    <div class="cover-list">
+      <figure *ngFor = "let curCover of coverList" class="cover">
+        <img [src]="curCover" (click)="changeCurrenImg(curCover)" >
+      </figure>
+    </div>
+    <div>
+      <input type="submit" value="Выбрать" (click)="setSelectedCover()">
+      <input type="submit" value="Отмена" (click)="closeWindow()">
+    </div>
+  </div>
+</div>
