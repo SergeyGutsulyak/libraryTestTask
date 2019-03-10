@@ -2,7 +2,7 @@
     "items":[
         {
             "name": "Python для детей. Самоучитель по программированию",
-            "imgURL": "assets/images/books/python-for-children.jpg",
+            "coverURL": "assets/images/books/python-for-children.jpg",
             "genre": "Программирование",
             "briefDescription": "Эта книга — самоучитель по одному из самых востребованных на сегодняшний день языков программирования — Python.",
             "likes": {
@@ -13,7 +13,7 @@
         },
         {
             "name": "Алгоритмы. Руководство по разработке",
-            "imgURL": "assets/images/books/algoritms.jpg",
+            "coverURL": "assets/images/books/algoritms.jpg",
             "genre": "Программирование",
             "briefDescription": "Книга является наиболее полным руководством по разработке эффективных алгоритмов.",
             "likes": {
@@ -24,7 +24,7 @@
         },
         {
             "name": "JavaScript. Карманный справочник",
-            "imgURL": "assets/images/books/jsspav.jpg",
+            "coverURL": "assets/images/books/jsspav.jpg",
             "genre": "Программирование",
             "briefDescription": "В книге представлены самые важные сведения о синтаксисе языка и показаны примеры его практического применения.",
             "likes": {
@@ -35,7 +35,7 @@
         },
         {
             "name": "Программирование микроконтроллеров ATMEL на языке C",
-            "imgURL": "assets/images/books/MK.jpg",
+            "coverURL": "assets/images/books/MK.jpg",
             "genre": "Программирование",
             "briefDescription": "Эта книга - сборник примеров программ на языке С для микроконтроллеров производства ATMEL",
             "likes": {
@@ -46,7 +46,7 @@
         },
         {
             "name": "История борделей с древних времен",
-            "imgURL": "assets/images/books/bordelhistory.jpg",
+            "coverURL": "assets/images/books/bordelhistory.jpg",
             "genre": "Эротика",
             "briefDescription": "Книга о примечательном историческом явлении в его развитии с древнейших времен до XVIII века.",
             "likes": {
@@ -57,7 +57,7 @@
         },
         {
             "name": "Секс-туризм. За и против",
-            "imgURL": "assets/images/books/sextravel.jpg",
+            "coverURL": "assets/images/books/sextravel.jpg",
             "genre": "Эротика",
             "briefDescription": "Какой секс-тур выбрать, чем различается секс-туризм разных стран, чего следует опасаться и чего можно ожидать от сексуальных партнеров-иностранцев, без утайки расскажет вам эта книга.",
             "likes": {
@@ -68,7 +68,7 @@
         },
         {
             "name": "Пирамиды и цивилизация богов",
-            "imgURL": "assets/images/books/sklyrov1.jpg",
+            "coverURL": "assets/images/books/sklyrov1.jpg",
             "genre": "История",
             "briefDescription": "Книга посвящена проблемам, связанным с древними пирамидальными сооружениями, целый ряд которых совершенно не вписывается в принятую историками версию их создания египтянами, майя и другими известными цивилизациями. Реальные артефакты указывают на присутствие в этих пирамидах следов технологий, которые порой превышают возможности даже современного общества.",
             "likes": {
@@ -79,7 +79,7 @@
         },
         {
             "name": "Сирийские перекрестки цивилизации",
-            "imgURL": "assets/images/books/sklyrov1.jpg",
+            "coverURL": "assets/images/books/sklyrov1.jpg",
             "genre": "История",
             "briefDescription": "Книга основана на материалах экспедиции Лаборатории альтернативной истории в Сирию в январе 2009 года.",
             "likes": {

@@ -1,6 +1,6 @@
 import { Component, OnInit, Output, EventEmitter} from '@angular/core';
 
-import {ImagesService} from '../../../services/images.service';
+import {ImagesService} from '../../../../services/images.service';
 
 @Component({
   selector: 'app-select-image',
@@ -8,7 +8,7 @@ import {ImagesService} from '../../../services/images.service';
   styleUrls: ['./select-image.component.scss']
 })
 export class SelectImageComponent implements OnInit {
-  coverList: [string];
+  coverList: string[];
   currentImageURL: string;
 
   @Output()

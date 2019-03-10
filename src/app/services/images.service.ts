@@ -4,13 +4,13 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ImagesService {
-  listImage: [string];
+  listImage: string[];
   constructor() {
     this.listImage = require('../test-data/books-cover.json').items;
     console.log(this.listImage);
    }
 
-  getCovers(): [string] {
+  getCovers(): string[] {
     return this.listImage;
   }
 }

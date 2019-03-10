@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+import {Book} from '../../models/book'
+import {BooksStorageService} from '../../services/books-storage.service';
+
 @Component({
   selector: 'app-book-list-page',
   templateUrl: './book-list-page.component.html',
@@ -7,9 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BookListPageComponent implements OnInit {
 
-  constructor() { }
+  bookList: Book[];
+
+  constructor(private booksStorageService: BooksStorageService) { }
 
   ngOnInit() {
+    this.bookList = this.booksStorageService.getAllBooks();
   }
 
 }

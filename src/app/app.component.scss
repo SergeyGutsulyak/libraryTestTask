@@ -1,0 +1,11 @@
+@font-face {
+	font-family: 'RobotoRegular';
+	src: url('/assets/fonts/RobotoRegular/RobotoRegular.eot');
+	src: url('/assets/fonts/RobotoRegular/RobotoRegular.eot?#iefix') format('embedded-opentype'),
+	url('/assets/fonts/RobotoRegular/RobotoRegular.woff') format('woff'),
+	url('/assets/fonts/RobotoRegular/RobotoRegular.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+
+*{font-family: "RobotoRegular", sans-serif; font-size: 16px; line-height: 1;}

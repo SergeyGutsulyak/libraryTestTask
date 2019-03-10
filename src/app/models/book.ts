@@ -1,16 +1,16 @@
 export class Book {
     private name: string;
-    private imgURL: string;
+    private coverURL: string;
     private genre: string;
     private briefDescription: string;
     private likes: {count: number,
-                    items: [number]
+                    items: number[]
                 };
-    private shopList: [number]; // массив id магазинов
+    private shopList: number[]; // массив id магазинов
 
     constructor(book) {
         this.name = book['name'];
-        this.imgURL = book['imgURL'];
+        this.coverURL = book['coverURL'];
         this.genre = book['genre'];
         this.briefDescription = book['briefDescription'];
         this.likes = book['likes'];
@@ -19,8 +19,8 @@ export class Book {
     get bookName() {
         return this.name;
     }
-    get bookImgURl() {
-        return this.imgURL;
+    get bookCoverURL() {
+        return this.coverURL;
     }
     get bookGenre() {
         return this.genre;

@@ -2,33 +2,33 @@
     "items":[
         {   
             "id":1,
-            "description":"oz.by",
-            "shopURL":"https://oz.by"
+            "name":"oz.by",
+            "URL":"https://oz.by"
         },
         {   
             "id":2,
-            "description":"ozon.ru",
-            "shopURL":"https://www.ozon.ru/category/16500/"
+            "name":"ozon.ru",
+            "URL":"https://www.ozon.ru/category/16500/"
         },
         {   
             "id":3,
-            "description":"wildberries книги",
-            "shopURL":"https://www.wildberries.by/catalog/knigi"
+            "name":"wildberries книги",
+            "URL":"https://www.wildberries.by/catalog/knigi"
         },
         {   
             "id":4,
-            "description":"bestbooks.by",
-            "shopURL":"https://bestbooks.by/"
+            "name":"bestbooks.by",
+            "URL":"https://bestbooks.by/"
         },
         {   
             "id":5,
-            "description":"mybooks.by",
-            "shopURL":"https://mybooks.by/"
+            "name":"mybooks.by",
+            "URL":"https://mybooks.by/"
         },
         {   
             "id":6,
-            "description":"chitatel.by",
-            "shopURL":"https://chitatel.by/"
+            "name":"chitatel.by",
+            "URL":"https://chitatel.by/"
         }
     ]
 }
