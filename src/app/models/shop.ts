@@ -1,5 +1,5 @@
-export interface Shop{
+export interface Shop {
   id: number;
   name: string;
-  URL: string;  
+  URL: string;
 }

@@ -1,14 +1,17 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule }   from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BookListPageComponent } from './pages/book-list-page/book-list-page.component';
 import { AuthPageComponent } from './pages/auth-page/auth-page.component';
-import { EditBookFormComponent } from './pages/book-list-page/edit-book-form/edit-book-form.component';
-import { SelectImageComponent } from './pages/book-list-page/edit-book-form/select-image/select-image.component';
-import { BookLineComponent } from './pages/book-list-page/book-line/book-line.component';
+import { EditBookFormComponent } from './pages/shared/edit-book-form/edit-book-form.component';
+import { SelectImageComponent } from './pages/shared/edit-book-form/select-image/select-image.component';
+import { BookLineComponent } from './pages/shared/book-line/book-line.component';
+import { SeachComponent } from './pages/book-list-page/seach/seach.component';
+import { HeaderComponent } from './pages/shared/header/header.component';
+import { FavoriteBookPageComponent } from './pages/favorite-book-page/favorite-book-page.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { BookLineComponent } from './pages/book-list-page/book-line/book-line.co
     AuthPageComponent,
     EditBookFormComponent,
     SelectImageComponent,
-    BookLineComponent
+    BookLineComponent,
+    SeachComponent,
+    HeaderComponent,
+    FavoriteBookPageComponent
   ],
   imports: [
     BrowserModule,

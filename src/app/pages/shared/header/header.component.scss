@@ -1,0 +1,23 @@
+.header{
+    padding: 10px 20px;
+    display: flex;
+    background-color: #1d2d44;
+    nav a{
+        margin-right: 15px;
+        color: white;
+    }
+    .left{
+        margin-left: auto;
+        display: flex;
+        color: #669999;
+        .enter{
+            padding-left: 10px;
+            color: white;
+            &:hover{
+                color: white;
+            }
+            cursor: pointer;
+            user-select: none;
+        }
+    }
+}

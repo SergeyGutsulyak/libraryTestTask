@@ -1,0 +1,32 @@
+.auth-page{
+    display: flex;
+    justify-content: center;
+    background-color: #f2f2f2;
+    .login-form{
+        margin-top: 200px;
+        width: 300px;
+        padding: 20px;
+        background-color: #4eb5ba;
+        .form-group{
+            margin-bottom: 15px;
+        }
+        label{
+            display: block;
+            width: 100px;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="password"]{
+            width: 100%;
+        }
+    }
+    .btn{
+        background-color: #4eb5ba;
+    }
+    .btn-container{
+        text-align: center;
+    }
+}
+
+.ng-invalid{
+    border: 1px solid red;
+}

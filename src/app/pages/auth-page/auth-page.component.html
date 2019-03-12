@@ -1,3 +1,21 @@
-<p>
-  auth-page works!
-</p>
+<div class="auth-page">
+  <form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)" class="login-form">
+    <div class="form-group">
+      <label for="login">login(e-mail):</label>
+      <input type="text" name="login" [(ngModel)]="login" required pattern="[a-zA-Z_\-\d]+@[a-zA-Z_\-\d]+?\.[a-zA-Z]{2,3}">
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" name="password" [(ngModel)]="password" required>
+    </div>
+    
+      <input type="submit" value="Войти" [disabled]="!loginForm.valid" class="btn">
+    
+    <div *ngFor="let user of getAllUsers()">
+      User:{{user.email}}
+      Role:{{user.role}}
+      Password:{{user.password}}
+    </div>
+  </form>
+
+</div>

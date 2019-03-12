@@ -16,39 +16,68 @@ export class Book {
         this.likes = book['likes'];
         this.shopList = book['shopList'];
     }
-    get bookName() {
+    get bookName(): string {
         return this.name;
     }
-    get bookCoverURL() {
+    set bookName(newName: string) {
+        this.name = newName;
+    }
+    get bookCoverURL(): string {
         return this.coverURL;
     }
-    get bookGenre() {
+    get bookGenre(): string {
         return this.genre;
     }
-
-    get bookBriefDescription() {
+    set bookGenre(newGenre: string) {
+        this.genre = newGenre;
+    }
+    get bookBriefDescription(): string {
         return this.briefDescription;
     }
+    set bookBriefDescription(newBriefDescription) {
+       this.briefDescription = newBriefDescription;
+    }
+
     get bookLikesCount() {
         return this.likes.count;
     }
 
-    get bookShopList() {
+    get bookShopList(): number[] {
         return this.shopList;
     }
 
+    set bookShopList(newShopList: number[]) {
+        this.shopList = newShopList;
+    }
+
     addLike(userId: number): void {
-        if (!(userId in this.likes.items)) {
+        if (!(this.likes.items.indexOf(userId) + 1)) {
             this.likes.count ++;
             this.likes.items.push(userId);
         }
     }
+    delLike(userId: number): void {
+        const pos = this.likes.items.indexOf(userId);
+        if (pos + 1) {
+            this.likes.count --;
+            this.likes.items.splice(pos, 1);
+        }
+    }
 
     isLiked(userId: number): boolean {
-        if (userId in this.likes.items) {
+        if (this.likes.items.indexOf(userId) + 1) {
             return true;
         } else {
             return false;
         }
+    }
+    isFoundString(searchStr: string): boolean {
+        if (this.name.toUpperCase().indexOf(searchStr.toUpperCase()) + 1) {
+            return true;
+        }
+        if (this.genre.toUpperCase().indexOf(searchStr.toUpperCase()) + 1) {
+            return true;
+        }
+        return false;
     }
 }

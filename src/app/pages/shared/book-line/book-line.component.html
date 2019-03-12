@@ -1,0 +1,33 @@
+<div *ngIf="!editMode" class="book-line" >
+  <div class="cover-likes">
+    <div class="cover" (click)="changeView()">
+      <img [src]="book.bookCoverURL">
+    </div>
+    <div class="likes" [class.liked]="isLikeFromCurUser">
+      <i class="material-icons" (click)="changeLike()">favorite</i>{{book.bookLikesCount}}
+    </div>
+  </div>
+  <div class="description" (click)="changeView()">
+    <div class="shot-description" >
+      <div class="book-name">
+        {{book.bookName}}
+      </div>
+      <div class="book-genre">
+        Жанр: {{book.bookGenre}}
+      </div>
+    </div>
+    <div *ngIf="isFull" class="full-description">
+      <div class="brief-description">
+        {{book.bookBriefDescription}}
+      </div>
+      <div class="shops">
+        <div class="shops-title">В продаже в магазинах:</div>  
+        <div *ngFor="let id of book.bookShopList" class="shop-item">
+          <a [href]="getShop(id).URL" target="_blank">{{getShop(id).name}}</a>
+        </div>
+      </div>
+    </div>
+    <input *ngIf="isCanEdit()" type="button" value="Редактировать" (click)="editBook()" class="btn btn-edit">
+  </div>
+</div>
+<app-edit-book-form *ngIf="editMode" [book]="book" (eventForm)="endEdit()"></app-edit-book-form>

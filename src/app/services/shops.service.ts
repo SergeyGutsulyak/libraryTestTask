@@ -6,20 +6,24 @@ import {Shop} from '../models/shop'
   providedIn: 'root'
 })
 export class ShopsService {
-  shopList: Shop[]
+  shopList: Shop[];
   constructor() {
     this.shopList =  require('../test-data/shop-list.json').items;
   }
 
   getIds(): number[] {
-    return this.shopList.map(shop => {return shop.id} )
+    return this.shopList.map(shop => {
+      return shop.id;
+    });
   }
 
-  getShopById(id: number): Shop{
-    return this.shopList.find(shop => {return shop.id === id});
+  getShopById(id: number): Shop {
+    return this.shopList.find(shop => {
+      return shop.id === id;
+    });
   }
 
-  getAllShop(): Shop[]{
+  getAllShop(): Shop[] {
     return this.shopList;
   }
 }

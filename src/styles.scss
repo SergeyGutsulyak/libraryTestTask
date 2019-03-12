@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+.btn{
+    border: 2px solid #1d2d44;
+    height: 30px;
+    border-radius: 3px;
+    background-color: white;
+    color:  #1d2d44;
+    font-size: 1.2em;
+    min-width: 90px;
+}
+.material-icons{
+    cursor:pointer;
+    user-select:none;
+}
+body{
+    background-color: #F2F2F2;
+}
+
+@font-face {
+	font-family: 'RobotoRegular';
+	src: url('/assets/fonts/RobotoRegular/RobotoRegular.eot');
+	src: url('/assets/fonts/RobotoRegular/RobotoRegular.eot?#iefix') format('embedded-opentype'),
+	url('/assets/fonts/RobotoRegular/RobotoRegular.woff') format('woff'),
+	url('/assets/fonts/RobotoRegular/RobotoRegular.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+
+*{font-family: "RobotoRegular", sans-serif; font-size: 16px; line-height: 1;}

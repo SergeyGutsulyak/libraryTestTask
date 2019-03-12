@@ -7,16 +7,33 @@ import {Book} from '../models/book';
 })
 export class BooksStorageService {
   bookList: Book[];
+  filterdBookList: Book[];
   constructor() {
     this.bookList = [];
     const bookListJ = require('../test-data/book-list.json').items;
-    // console.log(bookListJ);
     bookListJ.forEach(element => {
       this.bookList.push(new Book(element));
     });
-    console.log(this.bookList);
+    this.filterdBookList = this.bookList;
    }
-   getAllBooks(): Book[]{
+   getAllBooks(): Book[] {
      return this.bookList;
+   }
+   getFilteredBooks(): Book[] {
+    return this.filterdBookList;
+   }
+   searchBooks(searchString: string) {
+    this.filterdBookList = [];
+    this.bookList.forEach(book => {
+      if (book.isFoundString(searchString)) {
+        this.filterdBookList.push(book);
+      }
+    });
+   }
+   getLikedBooks(idUser: number): Book[] {
+    return this.bookList.filter(book => {
+      // console.log(book.isLiked(idUser))
+      return book.isLiked(idUser);
+    });
    }
 }

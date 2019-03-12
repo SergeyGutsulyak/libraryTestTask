@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import {Book} from '../../models/book'
+import {Book} from '../../models/book';
 import {BooksStorageService} from '../../services/books-storage.service';
 
 @Component({
@@ -15,7 +15,10 @@ export class BookListPageComponent implements OnInit {
   constructor(private booksStorageService: BooksStorageService) { }
 
   ngOnInit() {
-    this.bookList = this.booksStorageService.getAllBooks();
+    this.bookList = this.booksStorageService.getFilteredBooks();
+  }
+  update() {
+    this.bookList = this.booksStorageService.getFilteredBooks();
   }
 
 }

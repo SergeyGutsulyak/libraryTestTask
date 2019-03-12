@@ -1,0 +1,15 @@
+<div class="header">
+  <nav>
+    <a routerLink="" routerLinkActive="active"
+    [routerLinkActiveOptions]="{exact:true}">Главная</a>
+    <a *ngIf="usersService.isAuthorized" routerLink="/favorite-book" routerLinkActive="active">Понравившиеся</a>
+  </nav>
+  <div class="left">
+      <div *ngIf="usersService.isAuthorized" >{{usersService.login}}|</div>
+      <div class="enter">
+        <span *ngIf="!usersService.isAuthorized" (click)="login()">Войти</span>
+        <span *ngIf="usersService.isAuthorized"(click)="logOut()">Выйти</span>
+      </div>
+  </div>
+
+</div>

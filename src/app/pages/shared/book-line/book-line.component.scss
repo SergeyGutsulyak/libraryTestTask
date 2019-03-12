@@ -1,0 +1,106 @@
+.book-line{
+    border:1px solid #1d2d44;
+}
+
+.book-line{
+    display: flex;
+    .cover-likes{
+        flex: 1;
+        padding: 10px;
+        min-width: 150px;
+        max-width: 200px;
+        text-align: center;
+        .cover{
+            img{
+                width: 100%;
+            }
+        }
+
+        .likes{
+            font-size: 2em;
+            .material-icons{
+                margin: 0 15px;
+            }
+            &.liked{
+                color: #f25c41;
+            }
+        }
+
+    }
+    .description{
+        flex: 5;
+        margin-left: 20px;
+        position: relative;
+        user-select: none;
+        min-width: 400px;
+        cursor: pointer;
+        .book-name{
+            margin-top:1em;
+            margin-bottom: 0.5em;
+            font-size: 1.5em;
+        }
+        .book-genre{
+            font-size: 1.3em;
+        }
+
+        .brief-description{
+            margin-top:1em;
+            margin-bottom: 0.5em;
+            font-size: 1.1em;
+        }
+        .shops{
+            margin-top:1em;
+            margin-bottom: 0.5em;
+            padding: 10px 5px;
+            width: 300px;
+            background-color: #f25c41;
+            color: white;
+            .shops-title{
+                margin-bottom: 0.5em;
+            }
+            .shop-item{
+                height: 20px;
+                margin: 0 40px 5px 40px ;
+                padding-bottom: 5px;
+                border-bottom: 2px solid white;
+                a{
+                    display: block;
+                    color: black;
+                    height: 30px;
+                    text-decoration: none;
+                    &:hover{
+                        color: #1d2d44;
+                    }
+                }
+                &:hover{
+                    
+                    border-bottom: 2px solid #1d2d44;
+                }
+            }
+        }
+    }
+}
+
+.btn-edit{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+@media screen and (max-width: 720px) {
+    .btn-edit{
+        position: static;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .book-line{
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+    .btn-edit{
+        margin-bottom: 0;
+    }
+}

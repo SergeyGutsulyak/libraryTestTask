@@ -1,0 +1,107 @@
+.edit-book-form{
+    display: flex;
+    background-color: #4db6ba;
+    position: relative;
+    padding-bottom: 15px;
+    .cover-likes{
+        flex: 1;
+        padding: 10px;
+        min-width: 150px;
+        max-width: 200px;
+        text-align: center;
+        .cover{
+            img{
+                width: 100%;
+            }
+        }
+
+        .likes{
+            font-size: 2em;
+            .material-icons{
+                margin: 0 15px;
+            }
+            &.liked{
+                color: red;
+            }
+        }
+    }
+    .book-form{
+        flex:5;
+        margin-left: 20px;
+        .form-group{
+            margin-top:1em;
+            margin-bottom: 1.5em;
+            label{
+                display: block;
+                font-size: 1.5em;
+                margin-bottom: 0.5em;
+            }
+            input[type="text"]{
+                height: 30px;
+            }
+            input, textarea {
+                border-radius: 1px;
+                font-size: 1.2em;
+                width: 90%;
+               
+            }
+            textarea{
+                height: 80px;
+                resize: none;
+            }
+        }
+    }
+    .btn-close{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        text-align: center;
+        background-color: rgb(59, 51, 51);
+        color: white;
+        i{
+            line-height: 30px;
+        }
+        &:hover{
+            background-color: grey;
+        }
+    }
+}
+.added, .not-added{
+    width: 300px;
+    background-color: aliceblue;
+    min-height: 40px;
+    padding: 10px;
+    margin-bottom: 1.5em;
+}
+.btn-small{
+    height:25px;
+    font-size: 1.1em;
+    width: 35px;
+}
+.shop-item{
+    margin:5px 0px;
+    padding: 5px 0;
+    border-bottom: 2px solid white;
+    .shop-item-name{
+        display: inline-block;
+        width: 200px;
+    }
+}
+.btn-container{
+    text-align: center;
+}
+
+.ng-invalid{
+    border: 1px solid red;
+}
+
+@media screen and (max-width: 600px) {
+    .edit-book-form{
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+}

@@ -1,0 +1,6 @@
+<div class="seach-component">
+  <div class="search-container">
+      <input type="text" #seachInput (keyup.enter)="searchBook(seachInput.value)" class="search-input">
+    <i class="material-icons search-icon" (click)="searchBook(seachInput.value)">search</i>
+  </div>
+</div>

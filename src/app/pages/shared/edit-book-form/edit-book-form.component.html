@@ -1,0 +1,48 @@
+<div class="edit-book-form">
+  <div class="cover-likes">
+    <div class="cover">
+      <img [src]="book.bookCoverURL">
+    </div>
+    <div class="likes">
+      <i class="material-icons">favorite</i>{{book.bookLikesCount}}
+    </div>
+  </div>
+  <div class="book-form">
+      <form #editBookForm="ngForm" (ngSubmit)=changeBook(editBookForm)>
+          <div class="form-group">
+            <label for="name">Название книги</label>
+            <input type="text" name="name" [(ngModel)]="newName" required>
+          </div>
+          <div class="form-group">
+              <label for="">Жанр</label>
+              <input type="text" name="genre" [(ngModel)]="newGenre" required>
+            </div>
+          <div class="form-group">
+            <label for="briefDescription">Краткое описание</label>
+            <textarea name="briefDescription" [(ngModel)]="newBriefDescription" required></textarea>
+          </div>
+          <div class="shops">
+            <div>Магазины, которых продается книга:</div>
+            <div class="added">
+                <div *ngFor="let id of newShopIds" class="shop-item">
+                <span class="shop-item-name">{{getShop(id).name}}</span>
+                <input type="submit" (click)="delShop(getShop(id).id)" value="delete" class="btn btn-small">
+              </div>
+            </div>
+            <div>Магазины, которые можно добавить:</div>
+            <div class="not-added">
+              <div *ngFor="let id of notAddedShopsIds" class="shop-item">
+                <span class="shop-item-name">{{getShop(id).name}}</span>
+                <input type="submit" (click)="addShop(getShop(id).id)" value="add" class="btn btn-small">
+              </div>
+            </div>
+          </div>
+          <div class="btn-container">
+              <input type="submit" value="OK" [disabled]="!editBookForm.valid" class="btn btn-ok">
+          </div>
+        </form>
+  </div>
+  <div (click)="close()" class="btn-close">
+  <i class="material-icons close" >close</i>
+ </div>
+</div>
