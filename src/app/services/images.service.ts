@@ -13,4 +13,3 @@ export class ImagesService {
     return this.listImage;
   }
 }
-

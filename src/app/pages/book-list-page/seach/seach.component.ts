@@ -21,5 +21,4 @@ export class SeachComponent implements OnInit {
      this.booksStorageService.searchBooks(seartchString);
      this.updateSerch.emit();
   }
-
 }

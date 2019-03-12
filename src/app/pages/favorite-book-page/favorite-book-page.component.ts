@@ -27,5 +27,4 @@ export class FavoriteBookPageComponent implements OnInit {
   ngOnInit() {
     this.bookList = this.booksStorageService.getLikedBooks(this.usersService.userId);
   }
-
 }

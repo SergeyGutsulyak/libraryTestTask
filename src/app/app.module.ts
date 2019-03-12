@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { BookListPageComponent } from './pages/book-list-page/book-list-page.component';
 import { AuthPageComponent } from './pages/auth-page/auth-page.component';
 import { EditBookFormComponent } from './pages/shared/edit-book-form/edit-book-form.component';
-import { SelectImageComponent } from './pages/shared/edit-book-form/select-image/select-image.component';
 import { BookLineComponent } from './pages/shared/book-line/book-line.component';
 import { SeachComponent } from './pages/book-list-page/seach/seach.component';
 import { HeaderComponent } from './pages/shared/header/header.component';
@@ -19,7 +18,6 @@ import { FavoriteBookPageComponent } from './pages/favorite-book-page/favorite-b
     BookListPageComponent,
     AuthPageComponent,
     EditBookFormComponent,
-    SelectImageComponent,
     BookLineComponent,
     SeachComponent,
     HeaderComponent,
