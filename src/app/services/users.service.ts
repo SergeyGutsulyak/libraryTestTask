@@ -16,9 +16,6 @@ export class UsersService {
 
   constructor() {
     this.isAuthorized = false;
-    this.userId=1
-    this.isAuthorized=true
-    this.role = 'admin'
     this.users = require('../test-data/users-list.json').items;
     this.logEvent = new Subject<string>();
   }
